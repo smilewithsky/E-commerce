@@ -1,27 +1,92 @@
 # 🛒 E-commerce Project
 
-This is a full-stack e-commerce web application designed for modern online shopping experiences. It includes product management, authentication, cart functionality, and more.
+A modern full-stack e-commerce application built with Next.js, Tailwind CSS, Redux Toolkit, and (optionally) NestJS backend. This project demonstrates key features for a scalable online store including authentication, product management, and cart functionalities.
 
 ---
 
 ## 📦 Tech Stack
 
-### 🖥 Frontend – `my-app/`
-
+### Frontend (`my-app/`)
 - **Framework:** [Next.js](https://nextjs.org/)
-- **Styling:** [Tailwind CSS](https://tailwindcss.com/)
-- **State Management:** [Redux Toolkit](https://redux-toolkit.js.org/)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
+- **State Management:** Redux Toolkit
 - **Routing:** App Router (Next.js 13+)
-- **Type Checking:** TypeScript
 
-### 🛠 Backend – `test-nestjs/` (Optional, if available)
-
-- **Framework:** [NestJS](https://nestjs.com/)
-- **Database:** MySQL
+### Backend (`server/`) *(optional)*
+- **Framework:** NestJS
+- **Database:** PostgreSQL
 - **ORM:** TypeORM
-- **Authentication:** JWT-based Auth, Guards, Middleware
+- **Auth:** JWT with Guards & Middleware
 
 ---
 
-## 🗂 Project Structure
+## 🚀 Features
 
+- 🔐 Authentication (Login/Register)
+- 🎯 Middleware-protected routes
+- 🛍 Product listing and detail pages
+- 🛒 Cart with local state management
+- ⚙️ Fully typed with TypeScript
+- 🧱 Modular folder structure
+- 🌐 Responsive design
+
+---
+
+## 🗂 Folder Structure
+
+E-commerce/
+├── my-app/ # Frontend (Next.js)
+│ ├── public/ # Static files (images, SVGs)
+│ ├── src/ # Main application source
+│ │ ├── app/ # Pages and routing (App Router)
+│ │ ├── components/ # Reusable UI components
+│ │ ├── store/ # Redux setup and slices
+│ │ ├── lib/ # Helper functions & services
+│ │ └── types/ # TypeScript types
+├── server/ # Backend (NestJS) - optional
+└── README.md
+
+yaml
+Copy
+Edit
+
+---
+
+## 📥 Getting Started
+
+### 1. Clone Repository
+
+```bash
+git clone https://github.com/smilewithsky/E-commerce.git
+cd E-commerce
+2. Setup Frontend
+bash
+Copy
+Edit
+cd my-app
+npm install
+npm run dev
+Visit: http://localhost:3000
+
+3. Setup Backend (if used)
+bash
+Copy
+Edit
+cd server
+npm install
+npm run start:dev
+Make sure PostgreSQL is running locally and .env is configured correctly.
+
+🔧 Environment Variables
+my-app/.env
+ini
+Copy
+Edit
+NEXT_PUBLIC_API_URL=http://localhost:5000
+server/.env
+ini
+Copy
+Edit
+DATABASE_URL=postgres://youruser:yourpass@localhost:5432/ecommerce_db
+JWT_SECRET=your_jwt_secret
