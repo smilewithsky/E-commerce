@@ -13,7 +13,7 @@ A modern full-stack e-commerce application built with Next.js, Tailwind CSS, Red
 - **State Management:** Redux Toolkit
 - **Routing:** App Router (Next.js 13+)
 
-### Backend (`server/`) *(optional)*
+### Backend (`test-nestjs/`) *(optional)*
 - **Framework:** NestJS
 - **Database:** PostgreSQL
 - **ORM:** TypeORM
