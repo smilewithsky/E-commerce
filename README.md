@@ -56,8 +56,6 @@ Edit
 ## 📥 Getting Started
 
 ### 1. Clone Repository
-
-```bash
 git clone https://github.com/smilewithsky/E-commerce.git
 cd E-commerce
 2. Setup Frontend
